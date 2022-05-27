@@ -64,4 +64,4 @@ Na parte teórica, é criada uma documentação abrangente sobre a arquitetura R
   * Uso do debug via USB e da serial para depuração/log de código
   * ESP-IDF: instalação, uso e exemplos
   * ESP32-C3 com IDE Arduino: instalação uso e exemplos
-  * Utilização com sistemas operacionais de tempo real (FreeRTOS). Exemplos de uso.
+  * Utilização com sistemas operacionais de tempo real (FreeRTOS) ou Nuttx. Exemplos de uso.
