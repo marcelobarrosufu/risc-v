@@ -59,7 +59,7 @@ Na parte teórica, é criada uma documentação abrangente sobre a arquitetura R
     * Depuração
     * Flexibilidade de configuração de pinos
     * Características elétricas: consumo em diversos modos, tensão de operação, latências, etc
-* [Ferramentas de desenvolvimento e exemplos](cap03/README.md)
+* [Ferramentas de desenvolvimento e exemplos](cap03/README.md) [[Marcos](https://github.com/marcusvims),[Pedro](https://github.com/pedrocampisi)]
   * Instalação e uso do toolchain via linha de comando, exemplos de uso
   * Uso do debug via USB e da serial para depuração/log de código
   * ESP-IDF: instalação, uso e exemplos
