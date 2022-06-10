@@ -6,9 +6,9 @@
   Depois de abrir o cmd, basta escolher onde o projeto será criado, se o interesse for em criar no diretorio do usuario, basta utilizar o comando: cd %userprofile%.
   
   Com isso feito, o proximo passo é baixar um exemplo para teste, acesse o link e baixe o exemplo:https://github.com/espressif/esp-idf/tree/01d014c42def8d0c19e1ce55c07de6761e092ffa. 
-  A partir dai, utilize o comando "xcopy /e /i %IDF_PATH%\examples\get-started\hello_world hello_world" para copiar a pasta "hello_wordl" para o seu diretorio e depois entre na pasta "hello_world" com o comando "cd hello_world". Com isso, agora é necessário informar ao compilador que o código dentro desse projeto foi criado para o chip esp32, basta utilizar os seguintes comandos: “idf.py set-target esp32”. Depois disso, use o comando: “idf.py menuconfig”, para acessar o menu de configurações do projeto, a priori deixe as configurações padrões. Agora é possível compilar o projeto com o comando: “idf.py build”.
+  A partir dai, utilize o comando "xcopy /e /i %IDF_PATH%\examples\get-started\hello_world hello_world" para copiar a pasta "hello_wordl" para o seu diretorio e depois entre na pasta "hello_world" com o comando "cd hello_world". Com isso, agora é necessário informar ao compilador que o código dentro desse projeto foi criado para o chip esp32, basta utilizar os seguintes comandos: “idf.py set-target esp32”, dependendo do chip utilizado coloque "esp32-c3" ou "esp32-s3" no lugar do "esp32". Depois disso, use o comando: “idf.py menuconfig”, para acessar o menu de configurações do projeto, a priori deixe as configurações padrões. Agora é possível compilar o projeto com o comando: “idf.py build”.
   
-  
+  Portanto, depois de todos esses processos, finalmente é possível realizar os primeiros testes. O primeiro passo e achar qual a porta do seu esp32, para fazer isso, vá para o gerenciador de dispositivo e procure pelo dispositivo “Ports (COM & LPT)”, lá estará a sua porta. Entretanto, se der algum erro e o dispositivo não estiver aparecendo ou com algum conflito, basta procurar no google pelo driver “cp210x driver” e baixar a sua última versão.  
   
   
   
