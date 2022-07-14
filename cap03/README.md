@@ -14,18 +14,42 @@ Depois disso, basta seguir os passo a psso da instalação e escolher o diretori
 
 Para construir algum projeto basta procurar pelo "ESP-IDF Command Prompt (cmd.exe)" na aba de pesquisa do proprio Windows, esse comando abrirá o prompt de comando, só  que com todo o ambiente da ESP-IDF já preparado. Depois de abrir o cmd, basta escolher onde o projeto será criado, se o interesse for em criar no diretorio do usuario,  basta utilizar o comando: cd %userprofile%.
 
-### Conecte o seu Esp32
-
-Com um cabo do tipo micro usbO, conecte o seu Esp32 no USB do desktop ou notebook, com ele conectado, primeiro é necessário achar qual a porta do dispositivo, para fazer isso, vá para o gerenciador de dispositivo e procure pelo dispositivo “Ports (COM & LPT)”, lá estará a sua porta. Entretanto, se der algum erro e o dispositivo não estiver aparecendo ou com algum conflito, basta procurar  pelo driver [“cp210x driver”](https://www.driverguide.com/driver/detail.php?driverid=2000471) e baixar a sua última versão.
-
 ### Exemplos
 
-Agora, para realizar-se alguns testes, é necessário baixar algum [exemplo](https://github.com/espressif/esp-idf/tree/01d014c42def8d0c19e1ce55c07de6761e092ffa) 
+Agora, para realizar-se alguns testes, é necessário baixar algum [exemplo](https://github.com/espressif/esp-idf/tree/01d014c42def8d0c19e1ce55c07de6761e092ffa/examples/get-started) 
   
 #### Hello_world
 
-A partir dai, utilize o comando "xcopy /e /i %IDF_PATH%\examples\get-started\hello_world hello_world" para copiar a pasta "hello_wordl" para o seu diretorio e depois entre na pasta "hello_world" com o comando "cd hello_world". Com isso, agora é necessário informar ao compilador que o código dentro desse projeto foi criado para o chip esp32-c3, basta utilizar os seguintes comandos: “idf.py set-target esp32”, dependendo do chip utilizado, coloque "esp32-c3" ou "esp32-s3" no lugar do "esp32". Depois disso, use o comando: “idf.py menuconfig”, para acessar o menu de configurações do projeto, a priori deixe as configurações padrões. Agora é possível compilar o projeto com o comando: “idf.py build”.
-  
-  Portanto, depois de todos esses processos, finalmente é possível realizar os primeiros testes. Com isso feito, segure o botão “Boot” da sua placa e depois aperte o reset, com o “Boot” pressionado, e solte o “Boot”, com isso a placa será resetada. Assim, escreva o comando “idf.py -p COM5 (porta do meu chip) flash monitor” para compilar e executar o programa, feito isso a mensagem “Hello_world” aparecera no seu cmd, para sair do terminal aperte “ctrl” “t” e o “x”. Desse modo, se todos os passos anteriores forem seguidos corretamente será possivel rodar um primeiro exemplo no esp32-c3.
+Baixado o arquivo "hello_world", utilize o comando "xcopy /e /i %IDF_PATH%\examples\get-started\hello_world hello_world", ou faça isso manualmente, para copiar a pasta "hello_wordl" para o seu diretorio e depois entre na pasta "hello_world" com o comando "cd hello_world". 
+
+Com isso, agora é necessário informar ao compilador que o código dentro desse projeto foi criado para o chip esp32, para realizar tal feito, com um cabo do tipo micro usbO, conecte o seu Esp32 no USB do desktop ou notebook.
+
+Depois de conectado, basta utilizar o seguinte comandos: “idf.py set-target esp32”, dependendo do chip utilizado, coloque "esp32-c3" ou "esp32-s3" no lugar do "esp32". 
+
+Depois disso, use o comando: “idf.py menuconfig”, para acessar o menu de configurações do projeto, ele é utilizado para configurar variáveis específicas do projeto, por exemplo, nome e senha da rede Wi-Fi, velocidade do processador, etc.
+
+Porém, no caso desse exemplo pode-se deixar as configurações padrões. 
+
+Agora é possível compilar o projeto com o comando: “idf.py build”. Este comando compilará a aplicação e todos os componentes do ESP-IDF e, em seguida, gerará o bootloader, a tabela de partições e as aplicações binarias.
+
+#### Blink
+
+O passo a passo inicial do blink é o mesmo do Hello-world. 
+
+### Conecte o seu Esp32
+
+Portanto, depois de todos esses processos, finalmente é possível realizar os primeiros testes, primeiro é necessário achar qual a porta do dispositivo, para fazer isso, vá para o gerenciador de dispositivo e procure pelo dispositivo “Ports (COM & LPT)”, lá estará a sua porta. 
+
+Entretanto, se der algum erro e o dispositivo não estiver aparecendo ou com algum conflito, basta procurar  pelo driver [“cp210x driver”](https://www.driverguide.com/driver/detail.php?driverid=2000471) e baixar a sua última versão.
+
+Com isso feito, segure o botão “Boot” da sua placa e depois aperte o reset, com o “Boot” pressionado, e solte o “Boot”, com isso a placa será resetada.
+
+### Compilando e executando o programa
+
+Bom, realizada as etapas anteriores finalmente será possivel complilar e executar o exemplo escolhido. Assim, escreva o comando “idf.py -p COM5 (porta do meu chip) flash monitor” para compilar e executar o programa, feito isso a mensagem “Hello_world” aparecera no seu cmd, ou o seu chip começara a piscar caso o exemplo escolhido seja o "blink".
+
+Para sair do terminal aperte “ctrl” “t” e o “x”.
+
+Desse modo, se todos os passos anteriores forem seguidos corretamente será possivel rodar um primeiro exemplo no esp32-c3.
 
 
