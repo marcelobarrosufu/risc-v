@@ -46,7 +46,9 @@ Com isso feito, segure o botão “Boot” da sua placa e depois aperte o reset,
 
 ### Compilando e executando o programa
 
-Bom, realizada as etapas anteriores finalmente será possivel complilar e executar o exemplo escolhido. Assim, escreva o comando “idf.py -p COM5 (porta do meu chip) flash monitor” para compilar e executar o programa, feito isso a mensagem “Hello_world” aparecera no seu cmd, ou o seu chip começara a piscar caso o exemplo escolhido seja o "blink".
+Bom, realizada as etapas anteriores finalmente será possivel complilar e executar o exemplo escolhido. Assim, escreva o comando “idf.py -p COM5 (porta do meu chip) flash monitor” para compilar e executar o programa.
+
+Feito isso, caso tudo estaja nos conformes, a mensagem “Hello_world” aparecera no seu cmd, ou o seu chip começara a piscar caso o exemplo escolhido seja o "blink".
 
 Para sair do terminal aperte “ctrl” “t” e o “x”.
 
