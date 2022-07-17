@@ -20,38 +20,38 @@ O código para realizar a escrita, compilação, carregamento e debugging pode s
 
 Inicialmente deve-se instalar o Arduino IDE, para isso, acesse o link: https://www.arduino.cc/en/software e clique na opção do seu sistema operacional, como pode-se ver na figura abaixo.
 
-![Imagem1.png]("cap03/Imagens/Imagem1.png")
+![Imagem1.png](https://raw.githubusercontent.com/marcusvims/risc-v/main/cap03/Imagens/Imagem1.png)
 
 Faça o download e quando finalizá-lo, acesse o arquivo executável e execute-o até que o Arduino IDE esteja disponível em sua máquina, através do atalho abaixo.
 
-![Imagem2.png]("cap03/Imagens/Imagem2.png")
+![Imagem2.png](https://raw.githubusercontent.com/marcusvims/risc-v/main/cap03/Imagens/Imagem2.png)
 
 Ao acessar o Arduino IDE, a seguinte tela irá aparecer e basta incluir a biblioteca do ESP32 para que se consiga programá-lo e executá-lo.
 
-![Imagem3.png]("cap03/Imagens/Imagem3.png")
+![Imagem3.png](https://raw.githubusercontent.com/marcusvims/risc-v/main/cap03/Imagens/Imagem3.png)
 
 Primeiramente deve-se ir no canto superior da tela, ir em “Arquivo” após isso, em “preferências” e uma tela se abrirá.
 
-![Imagem4.png]("cap03/Imagens/Imagem4.png")
+![Imagem4.png](https://raw.githubusercontent.com/marcusvims/risc-v/main/cap03/Imagens/Imagem4.png)
 
 Na tela de preferências, deve-se clicar nas janelas ao lado de URLs adicionais para gerenciadores de placas. Após isso, coloque o seguinte código na janela que irá se abrir e clicar em ok. Agora, seu Arduino IDE está configurado para escrever, compilar e carregar códigos no ESP32-C3. 
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
 
-![Imagem5.png]("cap03/Imagens/Imagem5.png")
+![Imagem5.png](https://raw.githubusercontent.com/marcusvims/risc-v/main/cap03/Imagens/Imagem5.png)
 
-![Imagem6.png]("cap03/Imagens/Imagem6.png")
+![Imagem6.png](https://raw.githubusercontent.com/marcusvims/risc-v/main/cap03/Imagens/Imagem6.png)
 
 Agora que o Arduino IDE está configurado para o ESP32-C3, vamos realizar o primeiro código, que será o piscar do LED que contém na placa. Para isso, vá em “Arquivo”=>”Exemplos”=>”Basics”=>”Blink”, como mostrado na figura abaixo.
 
-![Imagem7.png]("cap03/Imagens/Imagem7.png")
+![Imagem7.png](https://raw.githubusercontent.com/marcusvims/risc-v/main/cap03/Imagens/Imagem7.png)
 
 O seguinte código irá aparecer, e ele faz com que o led interno na placa ESP32-C3 fique piscando a cada um segundo.
 
-![Imagem8.png]("cap03/Imagens/Imagem8.png")
+![Imagem8.png](https://raw.githubusercontent.com/marcusvims/risc-v/main/cap03/Imagens/Imagem8.png)
 
 Por fim, para conseguir compilar o código e enviá-lo para o ESP32-C3, basta ir em “Ferramentas”=>”Placa”=>”ESP32 Arduino”=>”ESP32C3 Dev Module”.
 
-![Imagem9.png]("cap03/Imagens/Imagem9.png")
+![Imagem9.png](https://raw.githubusercontent.com/marcusvims/risc-v/main/cap03/Imagens/Imagem9.png)
 
 Com a placa selecionada, basta clicar no sinal de check no canto esquerdo superior da tela para realizar a compilação e após compilar, basta clicar na seta ao lado, assim o código será enviado para a placa e o led piscará a cada um segundo.
 	
