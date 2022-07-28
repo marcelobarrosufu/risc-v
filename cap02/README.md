@@ -1,5 +1,5 @@
 # Espressif e RISC-V
-##Introdução sobre a Espressif e adoção do RISC-V
+## Introdução sobre a Espressif e adoção do RISC-V
 
 A Espressif Systems é uma multinacional pública de semicondutores sem fábrica, de acordo com a própria Espressif, que desenvolve soluções seguras, robustas, AIoT (inteligência artificial e Internet das Coisas) e com baixo consumo de energia de comunicação sem fio de ponta desde 2008 [https://www.espressif.com/en/company/about-espressif], sendo a líder no mercado de inteligência AIoT atual. 
 Ela foi responsável por criar a série de chips e módulos inteligentes e versáteis ESP8266, ESP32, ESP32-C, ESP32-S e ESP32-H, com tecnologia e soluções de código aberto, o que significa que usuários são capazes de alterar o código-fonte ou o projeto de acordo com suas necessidades de maneira gratuita [https://en.wikipedia.org/wiki/Open-source_license]. Assim, é possível perceber que a Espressif produz chips com necessidades específicas, ao invés de produzir um modelo único responsável por atender a uma ampla gama de demandas. 
@@ -8,17 +8,17 @@ Isso ocorre através de recursos de segurança como o secure boot, que permite s
 Somado a isso, esse chip possui encriptação de flash, baseada em AES-128-XTS. Na flash, são encriptados firmware e dados de configuração, que depois são suportados pelo seu controlador, protegendo os dados do ESP32-C3. Ainda, porta assinatura digital e HMAC periférico, responsáveis por garantir que a identidade do chip seja protegida, mesmo em casos de explorações de vulnerabilidade de software, e um world controller, permitindo que haja a separação de dois ambientes, destinados a uma execução confiável (TEE) por meio de um isolamento [https://www.filipeflop.com/blog/apresentando-novo-mcu-esp32-c3-da-familia-espressif/].
 O ESP32-C3 possui WiFi 2.4GHz e Bluetooth LE (low energy) 5.0 de longo alcance integrados, objetivando aprimorar tanto a experiência do usuário com o chip, quanto os diagnósticos de campo. Por esse motivo, também optou-se por baseá-lo em RISC-V, uma arquitetura de conjunto de instruções (ISA) de carga-armazenamento – que separa as instruções em acesso à memória e operações ALU – de padrão aberto e totalmente virtualizável, desenvolvida na Universidade da Califórnia, Berkeley [https://en.wikipedia.org/wiki/RISC-V#Rationale], com o intuito de utilização acadêmica e implantação eficiente para vários estilos de microarquitetura e tecnologia de implementação sem cobrança de royalties [The RISC-V Instruction Set Manual], até mesmo para indústrias, diferenciando-se de ISAs pré-existentes.
 
-##Hardware mínimo com ESP32-C3
+## Hardware mínimo com ESP32-C3
 
-##Módulos baseados em ESP32-C3
+## Módulos baseados em ESP32-C3
 
 A espressif lançou diferentes módulos baseados em ESP32-C3, todos com 15 GPIOs, 4MB de flash e para uso geral, sendo indicados para residências inteligentes e assistência médica, por exemplo.  Um deles é o ESP32-C3-MINI-1, que possui tamanho reduzido (13,2×16,6×2,4 mm), 53 pinos, antena PCB e os chips ESP32-C3FH4 e ESP32-C3FN4 incorporados. Os termos ‘H’ e ‘N’ simbolizam, respectivamente, temperatura alta e normal, o que indica que eles suportam uma temperatura ambiental operacional máxima de 105º C e 85ºC, respectivamente. Por sua vez, o termo ‘F’ indica flash. [https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf]
 Concomitante a ele, temos o ESP32-C3-MINI-1U, com 53 pinos, diferenciando-se por ter um tamanho ainda mais reduzido (13,2×12,5×2,4 mm), um conector U.FL para antena externa (IPEX) e os chips ESP32-C3-MINI-1U-H4 e ESP32-C3-MINI-1U-N4, que também suportam uma temperatura ambiental máxima, de 105º C e 85ºC, respectivamente. [https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf] e [https://espressif.com/en/products/modules].
 Além disso, existe o ESP32-C3-WROOM-02, cujas dimensões são 18.0 × 20.0 × 3.2 mm, dispõe de 19 pinos, antena PCB e dos chips ESP32-C3-WROOM-02-H4 e ESP32-C3-WROOM-02-N4 (105º C e 85ºC). Por fim, o ESP32-C3-WROOM-02U, também com 19 pinos, possui 18.0 × 14.3 × 3.2 mm, um conector U.FL para antena externa (IPEX) e os chips ESP32-C3-WROOM-02U-H4 e ESP32-C3-WROOM-02U-N4 (105º C e 85ºC). [https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf]
 
-##Processador ESP32-C3 com RISC-V
+## Processador ESP32-C3 com RISC-V
 
-####Principais características: modelos, encapsulamento, pinos, características de comunicação, processamento, etc.
+#### Principais características: modelos, encapsulamento, pinos, características de comunicação, processamento, etc.
 
 É um microprocessador de núcleo único, baseado em RISC-V, de 32 bits com pipeline de quatro estágios que opera em até 160 MHz (frequência de clock), RV32IMC ISA, operadores de multiplicação e divisão de 32 bits, 32 interrupções vetorizadas de acordo com 7 categorias de prioridade, 8 pontos de interrupção e observação de hardware, 16 áreas PMP e JTAG para depuração. [https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf]
 Também conta com um rico conjunto de interfaces periféricas SPI, Dual SPI, Quad SPI e QPI, possibilitando a conexão com interfaces externas como o flash, e com 22 pinos GPIOs programáveis com suporte pra ADC, UART, I2C, I2S, SPI, RMT, TWAI e PWM, tornando-o aplicável em vários cenários, como em eletrônicos de consumo e automação industrial.  [https://www.youtube.com/watch?v=eprycXXUmo4]
@@ -27,7 +27,7 @@ Por meio de um desempenho de RF de última geração, que inclui interruptor de 
 O ESP32-C3 porta 33 pins, que ordenados numericamente, com suas respectivas funções são: 1, entrada e saída RF; 2 e 3, fontes de alimentação analógica; 4, GPIO0; 5, GPIO1; 6, GPIO2; 7, habilitar (nível alto) ou desligar (nível baixo) o chip; 8, GPIO3; 9, GPIO4; 10, GPIO5; 11, fonte alimentação para RTC; 12, GPIO6; 13, GPIO7; 14, GPIO8; 15, GPIO9; 16, GPIO10; 17, fonte de alimentação para CPU IO; 18, GPIO11; 19, GPIO12; 20, GPIO13; 21, GPIO14; 22, GPIO15; 23, GPIO16; 24, GPIO17; 25, GPIO18 (USB); 26, GPIO19 (USB); 27, GPIO20; 28, GPIO21; 29, saída do cristal externo; 30, entrada do cristal interno; 31 e 32, fontes de alimentação analógica; e, por fim, 33, o terra. 
 [https://espressif.com/sites/default/files/documentation/esp32-c3_hardware_design_guidelines_en.pdf] e [https://www.espressif.com/en/products/socs]
 
-####Principais periféricos
+#### Principais periféricos
 
 Os principais periféricos analógicos são dois conversores ADC (analógico-digital) SAR de 12 bits, em que o ADC1 mede até 5 canais e o ADC2 somente 1 e um sensor de temperatura na faixa de -40 a 125 ºC, que detecta mudanças de temperaturas internas ao chip, normalmente maior que a de ambiente operacional.
 Por sua vez, os principais periféricos digitais são 22 pinos GPIOs (interface de entrada e saída de uso geral), bidirecionais, não inversores e com 3 estados, sendo multiplexáveis com funções como UART, que podem ser usados para funções que configuram registros ou analógicas, como ADC. Eles possuem pull-up ou down elegíveis e podem ser configurados como entrada, realizando a leitura do valor de entrada por meio do registrador do software ou gerando interrupções de CPU ativadas por nível. Um outro modo de configuração para os GPIOs é em operações de baixa potência, mantendo o estado do mesmo. 
@@ -43,20 +43,20 @@ O ESP32-C3 possui um controlador USB Serial/JTAG, que tem como característica u
 Por fim, o chip porta um controlador TWAI®, cuja compatibilidade é com o protocolo ISO 11898-1 (Especificação CAN 2.0). Esse controlador tem formato de quadro padrão (ID com 11 bits) e estendido (29 bits), taxas de bits que podem alternar entre 1 Kbit/s e 1 Mbit/s e 3 modos de operação: normal, escuta e auto teste (sem que seja necessária uma confirmação). Além disso, ele possui FIFO de recepção de 64 bytes, filtro de aceitação com modo simples e duplo e a capacidade de detectar e tratar erros, por meio de contadores de erros, da configuração do limite de interrupção de erro e da captura de erro de código e de arbitragem perdida.
 [https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf]
 
-####Tratamento de interrupções  
+#### Tratamento de interrupções  
 
-####Wifi e BLE
+#### Wifi e BLE
 
 O chip possui um subsistema integrado completo de Wifi de 2.4GHz, capaz de suportar modo Estação, modo SoftAP, uma combinação desses dois modos e, ainda, modo promíscuo. Esse subsistema tem compatibilidade com IEEE 802.11 b/g/n, suporta uma largura de banda de 20 MHz e 40 MHz, tem fluxo espacial único RX STBC, taxa de dados de no máximo 150 Mbps, potência de transmissão regulável e uma diversidade de antenas com um interruptor RF externo (controlado por GPIOs), que faz a seleção da antena visando reduzir os impactos das imperfeições do canal.
 Além disso, o chip implementa o protocolo MAC Wi-Fi 802.11 b/g/n completo, que suporta um conjunto de serviços básicos (BSS) STA e operações SoftAP sob a Função de Controle Distribuído (DCF). Visando minimizar o período de serviço ativo, é realizado um gerenciamento de energia automático, garantindo que a interação com o host seja mínima. Algumas funções de baixo nível são aplicadas também de maneira automática, como a infraestrutura BSS nos modos Station, SoftAP, Station + SoftAP e promíscuo, a multimídia Wifi (WMM), a oportunidade de transmissão (TXOP) e o monitoramento automático de beacons (hardware TSF) [https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf].
 Um subsistema Bluetooth LE 5.0 de longo alcance, uma das características mais importantes do chip, permite ao ESP32-C3 maior simplicidade de reconhecimento, controle de dispositivos no ambiente local e de integração à rede em comparação a quando existe somente o Wifi como um mecanismo de comunicação com servidores, que não é capaz de entregar um feedback confiável ao integrar-se à rede, além da complexidade de integrações iOS e Android. 
 Essa versão de longo alcance, melhorando-o em quase 100 metros, torna o dispositivo capaz de realizar aplicações em ambientes de grande porte, diferenciando-se das versões anteriores, que possuíam alcance menor. O chip também suporta recursos do protocolo de Bluetooth LE Mesh, facilitando o controle e comunicação com outros dispositivos BLE em uma rede local e integra, um controlador de camada de link de hardware, um bloco RF/modem e uma vasta pilha de protocolos de software. [https://www.filipeflop.com/blog/apresentando-novo-mcu-esp32-c3-da-familia-espressif/].
 
-####Depuração
+#### Depuração
 
-####Flexibilidade de configuração de pinos
+#### Flexibilidade de configuração de pinos
 
-####Características elétricas: consumo em diversos modos, tensão de operação, latências, etc
+#### Características elétricas: consumo em diversos modos, tensão de operação, latências, etc
 
 
 ... to be continued !
