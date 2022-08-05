@@ -52,15 +52,13 @@ Na parte teórica, é criada uma documentação abrangente sobre a arquitetura R
   * Processador ESP32-C3 com RISC-V
     * Principais características: modelos, encapsulamento, pinos, características de comunicação, processamento, etc
     * Principais periféricos
-    * Tratamento de interrupções
-    * Wifi e BLE
-    * Depuração
     * Flexibilidade de configuração de pinos
+    * Depuração
     * Características elétricas: consumo em diversos modos, tensão de operação, latências, etc
     * Hardware mínimo com ESP32-C3
-     * Módulos baseados em ESP32-C3
-       * Módulos oficiais da Espressif
-       * Outros módulos
+    * Módulos baseados em ESP32-C3
+    * Kits de desenvolvimento oficiais da Espressif
+    * Outros kits
 * [Ferramentas de desenvolvimento e exemplos](cap03/README.md) [[Marcos](https://github.com/marcusvims),[Pedro](https://github.com/pedrocampisi)]
   * Instalação e uso do toolchain via linha de comando, exemplos de uso
   * Uso do debug via USB e da serial para depuração/log de código
