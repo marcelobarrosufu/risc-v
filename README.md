@@ -49,7 +49,8 @@ Na parte teórica, é criada uma documentação abrangente sobre a arquitetura R
       * R format, I format, S format, U format, J format. Detalhes dos conjuntos de instruções.
 * [Espressif e RISC-V](cap02/README.md) [[Iasmin](https://github.com/iasminmartins)]
   * Introdução sobre a Espressif e adoção do RISCV-V
-  * Hardware mínimo com ESP32-C3
+  * Novo processador ESP32-C3
+    * Hardware mínimo com ESP32-C3
   * Módulos baseados em ESP32-C3
   * Processador ESP32-C3 com RISC-V
     * Principais características: modelos, encapsulamento, pinos, características de comunicação, processamento, etc
