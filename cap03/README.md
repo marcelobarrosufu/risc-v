@@ -74,7 +74,7 @@ Par desabilitar e habilitar as interrupções, há duas funções utilizadas que
   
 Quando uma tarefa é criada, ela recebe uma prioridade constante. Com isso, o escalonador irá executar a tarefa que estiver pronta de maior prioridade. Caso várias tarefas da mesma prioridade estejam em estado pronto, o escalonador irá alterar periodicamente a execução entre elas controlado por uma interrupção de tique.
   
-Vanilla FreeRTOS permite que portas e aplicativos configurem o kernel adicionando vários #define config... macros ao FreeRTOSConfig.h. Por meio dessas macros, o comportamento de agendamento do kernel e vários recursos do kernel podem ser habilitados ou desabilitados. No entanto, no ESP-IDF FreeRTOS, o arquivo ``FreeRTOSConfig.h`` é considerado privado e não deve ser modificado pelos usuários. Qualquer configuração do FreeRTOS exposta ao usuário será feita via menuconfig.
+Vanilla FreeRTOS permite que portas e aplicativos configurem o kernel adicionando vários ``#define config...`` macros ao ``FreeRTOSConfig.h``. Por meio dessas macros, o comportamento de agendamento do kernel e vários recursos do kernel podem ser habilitados ou desabilitados. No entanto, no ESP-IDF FreeRTOS, o arquivo ``FreeRTOSConfig.h`` é considerado privado e não deve ser modificado pelos usuários. Qualquer configuração do FreeRTOS exposta ao usuário será feita via menuconfig.
   
 O ESP-IDF FreeRTOS pode ser configurado no menu de configuração do projeto (idf.py menuconfig) em Component Config/FreeRTOS. Para obter uma lista completa de configurações do ESP-IDF FreeRTOS, consulte [Configuração do projeto.] (https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/kconfig.html)
   
@@ -90,7 +90,7 @@ xTaskCreate() só pode ser usado para criar uma tarefa que tenha acesso irrestri
   
 #### Exemplos de uso: 
 
-'''
+```
 // Task to be created.
 void vTaskCode( void * pvParameters )
 {
@@ -117,6 +117,6 @@ TaskHandle_t xHandle = NULL;
   if( xHandle != NULL )
   {
      vTaskDelete( xHandle );
-'''
+```
 
 
