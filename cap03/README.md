@@ -90,6 +90,7 @@ xTaskCreate() só pode ser usado para criar uma tarefa que tenha acesso irrestri
   
 #### Exemplos de uso: 
 
+'''
 // Task to be created.
 void vTaskCode( void * pvParameters )
 {
@@ -116,6 +117,6 @@ TaskHandle_t xHandle = NULL;
   if( xHandle != NULL )
   {
      vTaskDelete( xHandle );
-
+'''
 
 
