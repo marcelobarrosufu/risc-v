@@ -34,6 +34,13 @@ O ESP32-C3 porta 33 pins, que ordenados numericamente, com suas respectivas fun�
 
 ![Pins ESP32-C3](https://techoverflow.net/wp-content/uploads/2022/02/ESP32-C3-Pinout.svg)
 
+#### Flexibilidade de configuração de pinos
+
+A depender de configurações fixas, os pinos podem ter suas funções alteradas, de acordo com a tabela abaixo, em que as funções padrão no modo de inicialização SPI estão indicadas em negrito:
+
+![flex](https://user-images.githubusercontent.com/42560173/185243467-44e38e0e-ac40-410c-bbbe-a581a03d9200.png)
+![flex2](https://user-images.githubusercontent.com/42560173/185243489-115ec504-7a0c-4dae-8a6f-95d52453d311.png)
+
 #### Características de comunicação
 
 ###### Wifi
@@ -97,8 +104,6 @@ O GDMA possui 3 canais de transmissão e 3 canais de recepção, todos independe
 - Controlador TWAI®
 
 Por fim, o chip porta um controlador TWAI®, cuja compatibilidade é com o protocolo ISO 11898-1 (Especificação CAN 2.0). Esse controlador tem formato de quadro padrão (ID com 11 bits) e estendido (29 bits), taxas de bits que podem alternar entre 1 Kbit/s e 1 Mbit/s e 3 modos de operação: normal, escuta e auto teste (sem que seja necessária uma confirmação). Além disso, ele possui FIFO de recepção de 64 bytes, filtro de aceitação com modo simples e duplo e a capacidade de detectar e tratar erros, por meio de contadores de erros, da configuração do limite de interrupção de erro e da captura de erro de código e de arbitragem perdida.
-
-#### Flexibilidade de configuração de pinos
 
 #### Características elétricas: consumo em diversos modos, tensão de operação, latências, etc
 
