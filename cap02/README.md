@@ -32,7 +32,7 @@ Somado a isso, esse chip possui encriptação de flash, baseada em AES-128-XTS. 
 
 O ESP32-C3 porta 33 pins, que ordenados numericamente, com suas respectivas funções são: 1, entrada e saída RF; 2 e 3, fontes de alimentação analógica; 4, GPIO0; 5, GPIO1; 6, GPIO2; 7, habilitar (nível alto) ou desligar (nível baixo) o chip; 8, GPIO3; 9, GPIO4; 10, GPIO5; 11, fonte alimentação para RTC; 12, GPIO6; 13, GPIO7; 14, GPIO8; 15, GPIO9; 16, GPIO10; 17, fonte de alimentação para CPU IO; 18, GPIO11; 19, GPIO12; 20, GPIO13; 21, GPIO14; 22, GPIO15; 23, GPIO16; 24, GPIO17; 25, GPIO18 (USB); 26, GPIO19 (USB); 27, GPIO20; 28, GPIO21; 29, saída do cristal externo; 30, entrada do cristal interno; 31 e 32, fontes de alimentação analógica; e, por fim, 33, o terra.
 
-![Pins ESP32-C3](https://techoverflow.net/2022/02/26/what-is-the-pinout-of-the-esp32-c3-qfn32-package/)
+![Pins ESP32-C3](https://techoverflow.net/wp-content/uploads/2022/02/ESP32-C3-Pinout.svg)
 
 #### Características de comunicação
 
