@@ -124,3 +124,13 @@ Além disso, existe o [ESP32-C3-WROOM-02](https://www.espressif.com/sites/defaul
 #### Kits de desenvolvimento oficiais da Espressif
 
 #### Outros kits
+
+###### [LILYGO®](http://www.lilygo.cn/)
+
+- LILYGO® [T-PicoC3](http://www.lilygo.cn/prod_view.aspx?TypeId=50062&Id=1410) ESP32-C3 RP2040 Wireless WIFI Bluetooth Module Development Board Dual MCU 1.14 Inch ST7789V Display for Arduino.
+
+- LILYGO® TTGO T-OI Plus RISC-V ESP32-C3 V1.0 Module Wi-Fi BLE Development Board [Without Battery Holder](http://www.lilygo.cn/claprod_view.aspx?TypeId=21&Id=1365).
+
+- LILYGO® TTGO T-OI PLUS RISC-V ESP32-C3 V1.0 Module Wi-Fi BLE Development Board with 16340 [Battery Holder](http://www.lilygo.cn/prod_view.aspx?TypeId=50063&Id=1361)
+
+
