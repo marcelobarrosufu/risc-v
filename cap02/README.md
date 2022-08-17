@@ -2,7 +2,7 @@
 
 ## Introdução sobre a Espressif e adoção do RISC-V
 
-A [Espressif Systems] (https://www.espressif.com/en/company/about-espressif) é uma multinacional pública de semicondutores sem fábrica, de acordo com a própria Espressif, que desenvolve soluções seguras, robustas, AIoT (inteligência artificial e Internet das Coisas) e com baixo consumo de energia de comunicação sem fio de ponta desde 2008, sendo a líder no mercado de inteligência AIoT atual. 
+A [Espressif Systems](https://www.espressif.com/en/company/about-espressif) é uma multinacional pública de semicondutores sem fábrica, de acordo com a própria Espressif, que desenvolve soluções seguras, robustas, AIoT (inteligência artificial e Internet das Coisas) e com baixo consumo de energia de comunicação sem fio de ponta desde 2008, sendo a líder no mercado de inteligência AIoT atual. 
 
 Ela foi responsável por criar a série de chips e módulos inteligentes e versáteis ESP8266, ESP32, ESP32-C, ESP32-S e ESP32-H, com tecnologia e [soluções de código aberto] (https://en.wikipedia.org/wiki/Open-source_license), o que significa que usuários são capazes de alterar o código-fonte ou o projeto de acordo com suas necessidades de maneira gratuita. Assim, é possível perceber que a Espressif produz chips com necessidades específicas, ao invés de produzir um modelo único responsável por atender a uma ampla gama de demandas. 
 
