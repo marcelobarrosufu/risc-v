@@ -34,7 +34,7 @@ O ESP32-C3 porta 33 pins, que ordenados numericamente, com suas respectivas fun�
 
 ![Pins ESP32-C3](https://techoverflow.net/wp-content/uploads/2022/02/ESP32-C3-Pinout.svg)
 
-#### Flexibilidade de configuração de pinos
+#### [Flexibilidade de configuração de pinos](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf)
 
 A depender de configurações fixas, os pinos podem ter suas funções alteradas, de acordo com a tabela abaixo, em que as funções padrão no modo de inicialização SPI estão indicadas em negrito:
 
