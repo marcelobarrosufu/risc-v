@@ -109,7 +109,9 @@ Por fim, o chip porta um controlador TWAI®, cuja compatibilidade é com o proto
 
 #### Hardware mínimo com ESP32-C3
 
-https://espressif.com/sites/default/files/documentation/esp32-c3_hardware_design_guidelines_en.pdf
+O [hardware mínimo](https://espressif.com/sites/default/files/documentation/esp32-c3_hardware_design_guidelines_en.pdf) que esse chip necessita para estar em condição de operação é composto por uma fonte, uma comunicação USB que permite a depuração, em que o cabo é o único componente necessário para que seja realizada a programação do ESP32-C3, um relógio externo e um regulador de tensão para alimentar o chip.  Como é possível ver no esquemático a seguir, o ESP32-C3 conta com uma antena de PCB, um casamento de impedância da antena, relógio de 40 MHz, capacitor, desacoplamento e um filtro.
+
+![hardware_minimo](https://user-images.githubusercontent.com/42560173/185249435-372cd2ae-8c49-4d61-90a7-8501b91103de.png)
 
 #### Módulos baseados em ESP32-C3
 
