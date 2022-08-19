@@ -101,7 +101,7 @@ O GDMA possui 3 canais de transmissão e 3 canais de recepção, todos independe
 
 - Controlador USB Serial/JTAG
 
-	Tem como característica uma porta serial virtual CDC-ACM, funcionalidade do adaptador JTAG, que dá instruções para que seja realizada a ***depuração da CPU***, e programação flash, que pode ser interna ou externa. Ele é compatível com USB 2.0 de velocidade total, tendo como velocidade de transferência máxima 12 Mbit/s, que não é de alta velocidade (480 Mbit/ s) e contém um USB PHY integrado.
+Tem como característica uma porta serial virtual CDC-ACM, funcionalidade do adaptador JTAG, que dá instruções para que seja realizada a ***depuração da CPU***, e programação flash, que pode ser interna ou externa. Ele é compatível com USB 2.0 de velocidade total, tendo como velocidade de transferência máxima 12 Mbit/s, que não é de alta velocidade (480 Mbit/ s) e contém um USB PHY integrado.
   
 - Controlador TWAI®
 
