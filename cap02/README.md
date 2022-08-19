@@ -136,13 +136,19 @@ O [hardware mínimo](https://espressif.com/sites/default/files/documentation/esp
 
 #### Módulos baseados em ESP32-C3
 
+- ESP32-C3-MINI-1 e ESP32-C3-MINI-1U
+
 A espressif lançou diferentes [módulos baseados em ESP32-C3](https://espressif.com/en/products/modules), todos com 15 GPIOs, 4MB de flash e para uso geral, sendo indicados para residências inteligentes e assistência médica, por exemplo.  Um deles é o [ESP32-C3-MINI-1](https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf), que possui tamanho reduzido (13,2×16,6×2,4 mm), 53 pinos, antena PCB e os chips ESP32-C3FH4 e ESP32-C3FN4 incorporados. Os termos ‘H’ e ‘N’ simbolizam, respectivamente, temperatura alta e normal, o que indica que eles suportam uma temperatura ambiental operacional máxima de 105º C e 85ºC, respectivamente. Por sua vez, o termo ‘F’ indica flash. 
 
 Concomitante a ele, temos o ESP32-C3-MINI-1U, com 53 pinos, diferenciando-se por ter um tamanho ainda mais reduzido (13,2×12,5×2,4 mm), um conector U.FL para antena externa (IPEX) e os chips ESP32-C3-MINI-1U-H4 e ESP32-C3-MINI-1U-N4, que também suportam uma temperatura ambiental máxima, de 105º C e 85ºC, respectivamente. 
 
+- ESP32-C3-WROOM-02 e ESP32-C3-WROOM-02U
+
 Além disso, existe o [ESP32-C3-WROOM-02](https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf), cujas dimensões são 18.0 × 20.0 × 3.2 mm, dispõe de 19 pinos, antena PCB e dos chips ESP32-C3-WROOM-02-H4 e ESP32-C3-WROOM-02-N4 (105º C e 85ºC). Por fim, o ESP32-C3-WROOM-02U, também com 19 pinos, possui 18.0 × 14.3 × 3.2 mm, um conector U.FL para antena externa (IPEX) e os chips ESP32-C3-WROOM-02U-H4 e ESP32-C3-WROOM-02U-N4 (105º C e 85ºC).
   
 #### Kits de desenvolvimento oficiais da Espressif
+
+- 
 
 #### Outros kits
 
