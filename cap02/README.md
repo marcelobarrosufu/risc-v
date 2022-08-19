@@ -107,7 +107,7 @@ Tem como característica uma porta serial virtual CDC-ACM, funcionalidade do ada
 
 Por fim, o chip porta um controlador TWAI®, cuja compatibilidade é com o protocolo ISO 11898-1 (Especificação CAN 2.0). Esse controlador tem formato de quadro padrão (ID com 11 bits) e estendido (29 bits), taxas de bits que podem alternar entre 1 Kbit/s e 1 Mbit/s e 3 modos de operação: normal, escuta e auto teste (sem que seja necessária uma confirmação). Além disso, ele possui FIFO de recepção de 64 bytes, filtro de aceitação com modo simples e duplo e a capacidade de detectar e tratar erros, por meio de contadores de erros, da configuração do limite de interrupção de erro e da captura de erro de código e de arbitragem perdida.
 
-#### [Características elétricas](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf):
+#### [Características elétricas](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf)
 
 ###### Condições de operação
 
