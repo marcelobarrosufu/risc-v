@@ -28,23 +28,20 @@ O chip conta com o secure boot, que permite somente a utilização de aplicaçõ
 
 Somado a isso, esse chip possui encriptação de flash, baseada em AES-128-XTS. Na flash, são encriptados firmware e dados de configuração, que depois são suportados pelo seu controlador, protegendo os dados do ESP32-C3. Ainda, porta assinatura digital e HMAC periférico, responsáveis por garantir que a identidade do chip seja protegida, mesmo em casos de explorações de vulnerabilidade de software, e um world controller, permitindo que haja a separação de dois ambientes, destinados a uma execução confiável (TEE) por meio de um isolamento.
 
-#### [Encapsulamento e pinos](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf) 
+#### [Encapsulamento, pinos e flexibilidade de configuração de pinos](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf) 
 
-O ESP32-C3 porta 33 pins, listados na tabela a seguir: 
-
-![tab2](https://user-images.githubusercontent.com/42560173/185520648-cbf02340-be39-4655-9867-1d989ec65452.png)
-![tab20](https://user-images.githubusercontent.com/42560173/185520651-72e0b959-2791-4400-b4d7-812f94ae87da.png)
+###### Encapsulamento
 
 Seu encapsulamento se dá da seguinte maneira:
 
 ![Pins ESP32-C3](https://techoverflow.net/wp-content/uploads/2022/02/ESP32-C3-Pinout.svg)
 
-#### [Flexibilidade de configuração de pinos](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf)
+###### Pinos e flexibilidade de configuração de pinos
 
-A depender de configurações fixas, os pinos podem ter suas funções alteradas, de acordo com a tabela abaixo, em que as funções padrão no modo de inicialização SPI estão indicadas em negrito:
+O ESP32-C3 porta 33 pins, listados na tabela a seguir. A depender de configurações fixas, os pinos podem ter suas funções alteradas, de acordo com a tabela, em que as funções padrão no modo de inicialização SPI estão indicadas em negrito:
 
-![flex](https://user-images.githubusercontent.com/42560173/185243467-44e38e0e-ac40-410c-bbbe-a581a03d9200.png)
-![flex2](https://user-images.githubusercontent.com/42560173/185243489-115ec504-7a0c-4dae-8a6f-95d52453d311.png)
+![tab2](https://user-images.githubusercontent.com/42560173/185520648-cbf02340-be39-4655-9867-1d989ec65452.png)
+![tab20](https://user-images.githubusercontent.com/42560173/185520651-72e0b959-2791-4400-b4d7-812f94ae87da.png)
 
 #### Características de comunicação
 
