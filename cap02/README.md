@@ -30,7 +30,12 @@ Somado a isso, esse chip possui encriptação de flash, baseada em AES-128-XTS. 
 
 #### [Encapsulamento e pinos](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf) 
 
-O ESP32-C3 porta 33 pins, que ordenados numericamente, com suas respectivas funções são: 1, entrada e saída RF; 2 e 3, fontes de alimentação analógica; 4, GPIO0; 5, GPIO1; 6, GPIO2; 7, habilitar (nível alto) ou desligar (nível baixo) o chip; 8, GPIO3; 9, GPIO4; 10, GPIO5; 11, fonte alimentação para RTC; 12, GPIO6; 13, GPIO7; 14, GPIO8; 15, GPIO9; 16, GPIO10; 17, fonte de alimentação para CPU IO; 18, GPIO11; 19, GPIO12; 20, GPIO13; 21, GPIO14; 22, GPIO15; 23, GPIO16; 24, GPIO17; 25, GPIO18 (USB); 26, GPIO19 (USB); 27, GPIO20; 28, GPIO21; 29, saída do cristal externo; 30, entrada do cristal interno; 31 e 32, fontes de alimentação analógica; e, por fim, 33, o terra.
+O ESP32-C3 porta 33 pins, listados na tabela a seguir: 
+
+![tab2](https://user-images.githubusercontent.com/42560173/185520648-cbf02340-be39-4655-9867-1d989ec65452.png)
+![tab20](https://user-images.githubusercontent.com/42560173/185520651-72e0b959-2791-4400-b4d7-812f94ae87da.png)
+
+Seu encapsulamento se dá da seguinte maneira:
 
 ![Pins ESP32-C3](https://techoverflow.net/wp-content/uploads/2022/02/ESP32-C3-Pinout.svg)
 
@@ -38,7 +43,7 @@ O ESP32-C3 porta 33 pins, que ordenados numericamente, com suas respectivas fun�
 
 A depender de configurações fixas, os pinos podem ter suas funções alteradas, de acordo com a tabela abaixo, em que as funções padrão no modo de inicialização SPI estão indicadas em negrito:
 
-  ![flex](https://user-images.githubusercontent.com/42560173/185243467-44e38e0e-ac40-410c-bbbe-a581a03d9200.png)
+![flex](https://user-images.githubusercontent.com/42560173/185243467-44e38e0e-ac40-410c-bbbe-a581a03d9200.png)
 ![flex2](https://user-images.githubusercontent.com/42560173/185243489-115ec504-7a0c-4dae-8a6f-95d52453d311.png)
 
 #### Características de comunicação
@@ -105,7 +110,7 @@ O GDMA possui 3 canais de transmissão e 3 canais de recepção, todos independe
 
 Por fim, o chip porta um controlador TWAI®, cuja compatibilidade é com o protocolo ISO 11898-1 (Especificação CAN 2.0). Esse controlador tem formato de quadro padrão (ID com 11 bits) e estendido (29 bits), taxas de bits que podem alternar entre 1 Kbit/s e 1 Mbit/s e 3 modos de operação: normal, escuta e auto teste (sem que seja necessária uma confirmação). Além disso, ele possui FIFO de recepção de 64 bytes, filtro de aceitação com modo simples e duplo e a capacidade de detectar e tratar erros, por meio de contadores de erros, da configuração do limite de interrupção de erro e da captura de erro de código e de arbitragem perdida.
 
-#### [Características elétricas](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf): consumo em diversos modos, , latências, etc
+#### [Características elétricas](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf):
 
 ###### Condições de operação
 
@@ -118,6 +123,13 @@ Com uma alimentação de 3,3V a 25 °C e em um ciclo de trabalho de 100%, foi me
 ![rf-work](https://user-images.githubusercontent.com/42560173/185519505-b0a22e55-c496-43f6-b24e-5f7e80eb8826.png)
 
 ![work-mode](https://user-images.githubusercontent.com/42560173/185519515-a4237dfd-7599-4898-aa24-519732244336.png)
+
+###### Confiabilidade
+
+As qualificações de confiabilidade se dão de acordo com a seguinte tabela:
+
+![tab8](https://user-images.githubusercontent.com/42560173/185520320-40117466-ea26-475e-bb51-83bbb2bb3129.png)
+![tab18](https://user-images.githubusercontent.com/42560173/185520329-16320837-8a2d-4b1d-bddb-550880aba796.png)
 
 #### Hardware mínimo com ESP32-C3
 
