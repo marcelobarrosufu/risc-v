@@ -105,7 +105,19 @@ O GDMA possui 3 canais de transmissão e 3 canais de recepção, todos independe
 
 Por fim, o chip porta um controlador TWAI®, cuja compatibilidade é com o protocolo ISO 11898-1 (Especificação CAN 2.0). Esse controlador tem formato de quadro padrão (ID com 11 bits) e estendido (29 bits), taxas de bits que podem alternar entre 1 Kbit/s e 1 Mbit/s e 3 modos de operação: normal, escuta e auto teste (sem que seja necessária uma confirmação). Além disso, ele possui FIFO de recepção de 64 bytes, filtro de aceitação com modo simples e duplo e a capacidade de detectar e tratar erros, por meio de contadores de erros, da configuração do limite de interrupção de erro e da captura de erro de código e de arbitragem perdida.
 
-#### Características elétricas: consumo em diversos modos, tensão de operação, latências, etc
+#### [Características elétricas](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf): consumo em diversos modos, , latências, etc
+
+###### Condições de operação
+
+As condições de operação recomendadas são no mínimo 3 V e no máximo 3,6 V, tipicamente 3,3 V, para os pinos da fonte de alimentação, com uma corrente fornecida pela fonte de alimentação externa de, no mínimo, 0,5 A e uma temperatura de armazenamento que varia entre -40 e 105 °C para ESP32-C3 e ESP32-C3FH4 ou -40 a 85 °C para ESP32-C3FN4. Qualquer exposição fora do intervalo de -0,3 a 3.6 V aos pinos da fonte de alimentação é capaz de causar danos irreversíveis ao chip, bem como uma temperatura de armazenamento menor que -40 °C ou maior que 150 °C.
+
+###### Consumo de corrente
+
+Com uma alimentação de 3,3V a 25 °C e em um ciclo de trabalho de 100%, foi medido o consumo de corrente dependendo dos modos RF e de trabalho, como pode ser visto nas tabelas a seguir.
+
+![rf-work](https://user-images.githubusercontent.com/42560173/185519505-b0a22e55-c496-43f6-b24e-5f7e80eb8826.png)
+
+![work-mode](https://user-images.githubusercontent.com/42560173/185519515-a4237dfd-7599-4898-aa24-519732244336.png)
 
 #### Hardware mínimo com ESP32-C3
 
