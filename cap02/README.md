@@ -117,7 +117,7 @@ As condições de operação recomendadas são no mínimo 3 V e no máximo 3,6 V
 
 Com uma alimentação de 3,3V a 25 °C e em um ciclo de trabalho de 100%, foi medido o consumo de corrente dependendo dos modos RF e de trabalho, como pode ser visto nas tabelas a seguir.
 
-![rf-work](https://user-images.githubusercontent.com/42560173/185519505-b0a22e55-c496-43f6-b24e-5f7e80eb8826.png)
+![rf-mode](https://user-images.githubusercontent.com/42560173/185521295-a8e48cda-1bfc-4e16-a19a-96f1da32de10.png)
 
 ![work-mode](https://user-images.githubusercontent.com/42560173/185519515-a4237dfd-7599-4898-aa24-519732244336.png)
 
